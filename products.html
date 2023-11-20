@@ -3,29 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <title>Main site</title>
 </head>
-<body>
-    <header>
+<body id="grid-container">
+    <header id="top">
         <span>
-            <a href="index.html" id="logo"> <img src="img/logo1.png"></a>
+            <a href="index.html"> <img src="img/logo1.png" class="logo" alt="logo"></a>
         </span>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Contact</a></li>
+                <li class="listitems"><a href="index.html">Home</a></li>
+                <li class="listitems" id="producttext"><a href="products.html">Portfolio</a></li>
+                <li class="listitems"><a href="about.html">About</a></li>
+                <li class="listitems" id="contactbox"><a href="about.html">Contact</a></li>
             </ul>
         </nav>
+        <section id="portfoliosection">
+            <h1 id="portfolio">Portfolio</h1>
+        </section>
     </header>
     <main>
-
+        <section id="prodmenu">
+            <span class="underline-full-width">
+            <h2>Explore previous jobs</h2>
+            </span>
+                <article>
+                    <a href="#branding">
+                        <p class="black-box">Branding</p>
+                    </a>
+                    <a href="#design">
+                        <p class="black-box">Design</p>
+                    </a>
+                    <a href="#development">
+                        <p class="black-box">Development</p>
+                    </a>
+                </article>
+        </section>
+        <section id="branding">
+            <span class="underline-full-width">
+            <h2 class>Branding</h2>
+            </span>
+            <article>
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            </article>
+            <article>
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            <article>  
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            </article>
+            <article>
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            </article>
+        </section>
+        <section id="design">
+            <span class="underline-full-width">  
+            <h2 class>Design</h2>
+            </span>        
+            <article>
+                <article>
+                    <img src="https://placehold.co/400x400">
+                    <p>Lorem Ipsum is simply dummy</p>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400">
+                    <p>Lorem Ipsum is simply dummy</p>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400x400">
+                    <p>Lorem Ipsum is simply dummy</p>
+                </article>
+        </section>
+        <section id="development"> 
+            <span class="underline-full-width">
+            <h2 class>Development</h2>
+            </span>
+            <article>
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            </article>
+            <article>
+                <img src="https://placehold.co/400x400">
+                <p>Lorem Ipsum is simply dummy</p>
+            </article>
+        </section>
     </main>
     <footer>
-
+        <span>
+            <a href="index.html" class="logo"> <img src="img/logo1.png"></a>
+        </span>
+        <p>Company copyright 2023</p>
+        <span id="footericons">
+            <a href="https://www.facebook.com">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://no.linkedin.com">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+        </span>
     </footer>
-    
+        <!--Skip to top icon-->
+        <a href="#top" class="skip-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+        <!--Script for arrow to appear before bottom of page-->
+        <script>
+            window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          let topButton = document.querySelector(".skip-to-top");
+          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            topButton.style.display = "block";
+          } else {
+            topButton.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
