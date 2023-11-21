@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-    <title>Main site</title>
+    <title>A compelling company</title>
 </head>
 <body id="grid-container">
-    <header>
+    <header id="top">
+        <section id="nav-logo">
         <span>
             <a href="index.html"> <img src="img/logo1.png" class="logo" alt="logo"></a>
         </span>
@@ -23,8 +24,8 @@
                 <li class="listitems" id="contactbox"><a href="about.html">Contact</a></li>
             </ul>
         </nav>
+        </section>
         <section id="headline-background">
-    
             <article id="transperent-headline-bg">
             <h1>Compelling headline</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -45,6 +46,7 @@
         </section>
         <section id="yellowsection">
             <img src="https://placehold.co/400x400" alt="placeholder">
+            <article>
             <h2>About our <br> company</h2>
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -53,9 +55,12 @@
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
             <span id="readmoreaboutus"><a href="about.html#services">Read more about us</a></span>
+            </article>
+            
         </section>
         <section>
             <h2>Our services</h2>
+            <span id="services-span">
             <article>
                 <i class="fa fa-users" aria-hidden="true"></i>
                 <h3>Branding</h3>
@@ -75,7 +80,8 @@
                 <i class="fa fa-wifi" aria-hidden="true"></i>
                 <h3>Support</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing</p>
-            </article>  
+            </article>
+            </span>  
         </section>
         <section id="newlettersection">
             <h2>Sign me up for newsletter</h2>
@@ -103,7 +109,7 @@
         </span>
     </footer>
     <!--Skip to top button-->
-    <a href="#" class="skip-to-top">
+    <a href="#top" class="skip-to-top">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </a>
 </body>

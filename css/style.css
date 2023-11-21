@@ -1,9 +1,14 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    max-width:100%;
+    overflow-x: hidden;
 }
 /*-- HEADER START ---*/
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -17,10 +22,14 @@ header {
 header section {
     display: flex;
     flex-direction: column;
-    background-color: #cfcece;
     box-sizing: border-box;
 }
-
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+}
 
 
 nav {
@@ -41,9 +50,11 @@ nav ul {
 
 }
 /*- Header for index.html -*/
+
 /*-- Kode for gul boks rundt "Contact" --*/
+
 #headline-background {
-background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg'); /* Replace with the path to your image */
+background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg'); 
 background-size: cover; 
 padding:2rem;
 align-items:center;
@@ -59,6 +70,8 @@ align-items:center;
     display: inline-block;
 }
 /*- Kode for bold text og gul underlinje på linkene -*/
+
+
 #hometext {
     font-weight: bolder;
     text-decoration: underline;
@@ -113,9 +126,17 @@ main section span h2 {
 #branding article p, #design article p, #development article p {
     font-weight: bold;
 }
+#portfoliosection {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg'); 
+    background-size: cover; 
+    padding:2rem;
+    align-items:center;
+}
 /*---Header for about --*/
+
+
 #about-background {
-    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg'); /* Replace with the path to your image */
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg'); 
     background-size: cover; 
     padding:2rem;
     align-items:center;
@@ -127,7 +148,11 @@ main section span h2 {
 }
 
 /*-- HEADER END--*/
+
+
 /*-- MAIN START--*/
+
+
 /*- Main for index.html -*/
 main {
     display: flex;
@@ -161,6 +186,7 @@ main section#yellowsection p {
     border-style: solid;
 
 }
+
 /*-- Formatering av ikoner--*/
 .fa.fa-users {
     font-size: 2rem;
@@ -232,6 +258,11 @@ main section#yellowsection p {
 #prodmenu article a {
     padding:0.5rem;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*--MAIN FOR ABOUT----*/
 #about-clients {
     padding:0;
@@ -321,3 +352,110 @@ footer span {
     color:white;
     background-color: #000;
 }
+
+/*-- MEDIA QUERY ---*/
+@media only screen and (min-width:600px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #grid-container > header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    #grid-container > main {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    #grid-container > footer {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+    body {
+        max-width:1600px;
+
+    }
+
+    /*--- INDEX.HTML---*/
+    /*---HEADER ---*/
+    #nav-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    nav {
+        max-width: 800px;
+        width:unset;
+    }
+    nav ul {
+        display:flex;
+        margin-bottom: 0px;
+        margin-top: 5rem;
+        padding: 1rem;
+
+    }
+    /*--MAIN ---*/
+    #yellowsection {
+        display:flex;
+    }
+    #yellowsection article {
+        text-align:left;
+    }
+    #yellowsection article h2 {
+        padding-left: 2rem;
+    }
+    #readmoreaboutus {
+        padding-left: 2rem;
+    }
+    #services-span {
+        display:flex;
+    }
+    #signmeuplabel {
+        display: flex;
+        justify-content: center;
+    }
+    /*---- FOOOTER ---*/
+    body footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #000;
+        justify-content: space-between;
+    }
+    /*--- PRODUCTS.HTML ---*/
+    #prodmenu {
+        display: flex;
+        flex-direction: column;
+        padding:2rem;
+        width:100%;
+        text-align:left;
+        
+    }
+    #prodmenu article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 1rem;
+    }
+    #branding {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100%;
+        text-align: left;
+    }
+    #branding-image {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    #branding article {
+        display:flex;
+        flex-direction:column;
+        width:fit-content;
+    }
+}
+
+
