@@ -1,8 +1,8 @@
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    max-width:1600px;
     width:100%;
     overflow-x: hidden;
 }
@@ -80,11 +80,14 @@ align-items:center;
 #contactbox {
     background-color: #e6bd43;
     display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-#contactbox :hover {
-    background-color: black;
-    color: #e6bd43;
+.contact-a {
+    padding: 0.5rem;
+  
 }
+
 /*- Kode for bold text og gul underlinje på linkene -*/
 
 
@@ -119,6 +122,7 @@ body header section {
     color: black;
     font-weight:bolder;
 }
+
 /*- Header for products.html -*/
 #portfoliosection {
     width: 100%;
@@ -209,6 +213,7 @@ main section#yellowsection p {
 
 }
 
+
 /*-- Formatering av ikoner--*/
 .fa.fa-users {
     font-size: 2rem;
@@ -280,6 +285,7 @@ main section#yellowsection p {
     align-content: center;
     padding:0.5rem;
 }
+
 #prodmenu a {
     text-decoration:none;
 }
@@ -414,10 +420,6 @@ footer span {
         grid-column: 1 / 4;
         grid-row: 3 / 4;
     }
-    body {
-        max-width:1600px;
-
-    }
 
     /*--- INDEX.HTML---*/
     /*---HEADER ---*/
@@ -509,7 +511,7 @@ footer span {
     main section article h3 {
         font-family: 'Roboto', sans-serif;
     }
-        
+      
     
     /*---- ABOUT.HTML ---*/
     #services-container {
@@ -517,6 +519,7 @@ footer span {
     }
     #contact-container  {
         display:flex;
+        flex-direction:row;
         justify-content: space-around;
     }
     #contact-container article {
@@ -539,5 +542,44 @@ footer span {
     #iframe {
         width:100%;
     }
+    /*-- Hover effects--*/  
+    #contactbox a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+    }
+    
+    #readmoretext a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
 
+    #readmoreaboutus a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+    #get-in-touch a:hover {
+    background-color: #252525;
+    color: #e6bd43;
+
+}
+   #signmeup:hover {
+    background-color: #252525;
+    color: #e6bd43; 
+}
+    .black-box:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+.picture-format img {
+    transition: transform 0.3s ease-in-out; 
+/*-- Max width ---*/    
+    max-width: 629px; 
+/*-- Max width ---*/    
+    width: 100%;
+    height: auto;
+}
+
+.picture-format img:hover {
+    transform: scale(1.1); 
+}
 }
