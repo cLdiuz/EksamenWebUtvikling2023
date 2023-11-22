@@ -3,9 +3,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    max-width:100%;
+    width:100%;
     overflow-x: hidden;
 }
+
 /*-- HEADER START ---*/
 
 
@@ -30,8 +31,19 @@ header section {
     grid-template-rows: auto auto auto;
     height: 100vh;
 }
+#grid-container > header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#grid-container > main {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#grid-container > footer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
 
-
+}
 nav {
     max-width: 800px;
     width: 100%;
@@ -68,6 +80,10 @@ align-items:center;
 #contactbox {
     background-color: #e6bd43;
     display: inline-block;
+}
+#contactbox :hover {
+    background-color: black;
+    color: #e6bd43;
 }
 /*- Kode for bold text og gul underlinje på linkene -*/
 
@@ -116,7 +132,7 @@ body header section {
 
 .underline-full-width {
     border-bottom: 3px solid #e6bd43;
-    width: 90%;
+    width: 80%;
     display: inline-block;
     margin:1rem;
 }
@@ -146,7 +162,13 @@ main section span h2 {
     padding: 0rem;
     width:70%;
 }
-
+#get-in-touch a {
+    text-decoration:none;
+    color: black;
+    background-color:#e6bd43;
+    padding:0.5rem;
+    font-weight:bolder;
+}
 /*-- HEADER END--*/
 
 
@@ -201,9 +223,19 @@ main section#yellowsection p {
 .fa.fa-wifi {
     font-size: 2rem;
 }
+.fa.fa-map-marker {
+    font-size: 2rem;
+}
+.fa.fa-phone {
+    font-size: 2rem;
+}
+.fa.fa-envelope {
+    font-size: 2rem;
+}
 .logo {
     height: 90%;
     width: auto;
+    padding: 0.5rem;
   
 }
 /*-- Formatering av ikoner slutt--*/
@@ -246,6 +278,7 @@ main section#yellowsection p {
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding:0.5rem;
 }
 #prodmenu a {
     text-decoration:none;
@@ -260,12 +293,11 @@ main section#yellowsection p {
 }
 img {
     max-width: 100%;
-    height: auto;
 }
 
 /*--MAIN FOR ABOUT----*/
 #about-clients {
-    padding:0;
+    padding:2rem;
     background-color:#e6bd43;
     width:100%;
 }
@@ -288,11 +320,16 @@ img {
     background-color: #e6bd43;
     padding: 10px;
     display: inline-block;
-    margin-left: -13.313rem;
     
 }
 #mapsection {
     padding:0;
+    width:100%;
+}
+#send {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
 }
 
 
@@ -342,6 +379,10 @@ footer span {
     font-size:2rem;
     margin:5px;
 }
+#contact-container {
+    display: flex;
+    flex-direction: column;
+}
 /*-----FOOTER END------*/
 /*-Skip to top button-*/
 .skip-to-top {
@@ -352,6 +393,7 @@ footer span {
     color:white;
     background-color: #000;
 }
+
 
 /*-- MEDIA QUERY ---*/
 @media only screen and (min-width:600px) {
@@ -425,7 +467,7 @@ footer span {
         justify-content: space-between;
     }
     /*--- PRODUCTS.HTML ---*/
-    #prodmenu {
+    #prodmenu, #branding, #design, #development {
         display: flex;
         flex-direction: column;
         padding:2rem;
@@ -444,18 +486,58 @@ footer span {
         flex-direction: column;
         padding: 2rem;
         width: 100%;
-        text-align: left;
     }
     #branding-image {
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
     }
-    #branding article {
+    #branding-container, #design-container {
         display:flex;
-        flex-direction:column;
-        width:fit-content;
+        flex-direction:row;
+        justify-content:space-between;   
     }
+    #development-container {
+        display:flex;
+        flex-direction:row;
+
+    }
+    .picture-format {
+        padding:1rem;
+
+    }
+    main section article h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+        
+    
+    /*---- ABOUT.HTML ---*/
+    #services-container {
+        display:flex;
+    }
+    #contact-container  {
+        display:flex;
+        justify-content: space-around;
+    }
+    #contact-container article {
+        padding: 2rem;
+    }
+    #contact-title {
+        width:100%;
+    }
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-p {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    #mapsection {
+        width:100%;
+    }
+    #iframe {
+        width:100%;
+    }
+
 }
-
-

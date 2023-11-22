@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bjørnar Berntsen">
+    <meta name="description" 
+          content="Eksamen Webutvikling 2023, Home page, Compelling company">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
@@ -14,16 +17,16 @@
     <header id="top">
         <section id="nav-logo">
         <span>
-            <a href="index.html"> <img src="img/logo1.png" class="logo" alt="logo"></a>
+            <a href="index.html" title="Home">  <img src="img/logo1.png" class="logo" alt="logo"></a>
         </span>
         <nav>
             <ul>
-                <li class="listitems" id="hometext"><a href="index.html">Home</a></li>
-                <li class="listitems"><a href="products.html">Portfolio</a></li>
-                <li class="listitems"><a href="about.html">About</a></li>
-                <li class="listitems" id="contactbox"><a href="about.html">Contact</a></li>
+                <li class="listitems" id="hometext"><a href="index.html" title="Home" >Home</a></li>
+                <li class="listitems"><a href="products.html" title="Portfolio">Portfolio</a></li>
+                <li class="listitems"><a href="about.html" title="About us">About</a></li>
+                <li class="listitems" id="contactbox"><a href="about.html#contact-title" title="Contact us">Contact</a></li>
             </ul>
-        </nav>
+        </nav>  
         </section>
         <section id="headline-background">
             <article id="transperent-headline-bg">
@@ -32,7 +35,7 @@
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <span id="readmoretext"><a href="about.html#services">Read more about our services</a></span>
+            <span id="readmoretext"><a href="about.html#services" title="Services">Read more about our services</a></span>
             </article>
         </section>
     </header>
@@ -54,13 +57,13 @@
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <span id="readmoreaboutus"><a href="about.html#services">Read more about us</a></span>
+            <span id="readmoreaboutus"><a href="about.html#services" title="About">Read more about us</a></span>
             </article>
             
         </section>
         <section>
             <h2>Our services</h2>
-            <span id="services-span">
+            <div id="services-span">
             <article>
                 <i class="fa fa-users" aria-hidden="true"></i>
                 <h3>Branding</h3>
@@ -81,36 +84,42 @@
                 <h3>Support</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing</p>
             </article>
-            </span>  
+        </div>  
         </section>
         <section id="newlettersection">
             <h2>Sign me up for newsletter</h2>
-            <span id="signmeuplabel">
+            <div id="signmeuplabel">
             <label><input type="text" placeholder="email@email.com"></label> 
             <p id="signmeup">Sign me up</p>
-            </span>
+            </div>
         </section>
     </main>
     <footer>
         <span>
-            <a href="index.html"> <img src="img/logo1.png" class="logo" alt="logo"></a>
+            <a href="index.html" title="Home"> <img src="img/logo1.png" alt="logoplaceholder"  class="logo"></a>
         </span>
         <p>Company copyright 2023</p>
         <span id="footericons">
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" title="Facebook">
                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" title="Instagram">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-            <a href="https://no.linkedin.com">
+            <a href="https://no.linkedin.com" title="LinkedIn">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
         </span>
     </footer>
-    <!--Skip to top button-->
-    <a href="#top" class="skip-to-top">
+    <!---Skip to top knapp-->
+    <button class="skip-to-top" onclick="scrollToTop()">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
+    </button>
+    <!---Script for smooth scroll til top -->
+    <script>
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
 </body>
 </html>

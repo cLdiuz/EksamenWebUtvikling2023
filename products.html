@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bjørnar Berntsen">
+    <meta name="description" 
+          content="Eksamen Webutvikling 2023, Product page">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Products</title>
 </head>
 <body id="grid-container">
@@ -21,7 +27,7 @@
                     <li class="listitems"><a href="index.html">Home</a></li>
                     <li class="listitems" id="producttext"><a href="products.html">Portfolio</a></li>
                     <li class="listitems"><a href="about.html">About</a></li>
-                    <li class="listitems" id="contactbox"><a href="about.html">Contact</a></li>
+                    <li class="listitems" id="contactbox"><a href="about.html/#contact-title">Contact</a></li>
                 </ul>
             </nav>
             </section>
@@ -31,78 +37,82 @@
     </header>
     <main>
         <section id="prodmenu">
-            <span class="underline-full-width">
+            <section class="underline-full-width">
             <h2>Explore previous jobs</h2>
-            </span>
+            </section>
                 <article>
                     <a href="#branding">
-                        <p class="black-box">Branding</p>
+                        <h3 class="black-box">Branding</h3>
                     </a>
                     <a href="#design">
-                        <p class="black-box">Design</p>
+                        <h3 class="black-box">Design</h3>
                     </a>
                     <a href="#development">
-                        <p class="black-box">Development</p>
+                        <h3 class="black-box">Development</h3>
                     </a>
                 </article>
         </section>
         <section id="branding">
-            <span class="underline-full-width">
+            <section class="underline-full-width">
             <h2 class>Branding</h2>
-            </span>
-            <div id="branding-image">
-            <article>
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
+            </section>
+            <div id="branding-container">
+            <article class="picture-format">
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
             </article>
-            <article>
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
-            <article>  
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
+            <article class="picture-format">   
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
             </article>
-            <article>
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
+            <article class="picture-format">  
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
+            </article>
+            <article class="picture-format">
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             </div>
         </section>
         <section id="design">
-            <span class="underline-full-width">  
+            <section class="underline-full-width">  
             <h2 class>Design</h2>
-            </span>        
-            <article>
-                <article>
-                    <img src="https://placehold.co/400x400">
-                    <p>Lorem Ipsum is simply dummy</p>
+            </section>
+            <div id="design-container">       
+                <article class="picture-format">
+                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
-                <article>
-                    <img src="https://placehold.co/400x400">
-                    <p>Lorem Ipsum is simply dummy</p>
+                <article class="picture-format">
+                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
-                <article>
-                    <img src="https://placehold.co/400x400">
-                    <p>Lorem Ipsum is simply dummy</p>
+                <article class="picture-format">
+                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
+            </div>
         </section>
         <section id="development"> 
-            <span class="underline-full-width">
+            <section class="underline-full-width">
             <h2 class>Development</h2>
-            </span>
-            <article>
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
+            </section>
+            <div id="development-container">
+            <article class="picture-format">
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
             </article>
-            <article>
-                <img src="https://placehold.co/400x400">
-                <p>Lorem Ipsum is simply dummy</p>
+            <article class="picture-format">
+                <img src="https://placehold.co/400x400" alt="placeholder">
+                <h3>Lorem Ipsum is simply dummy</h3>
             </article>
+            </div>
         </section>
     </main>
     <footer>
         <span>
-            <a href="index.html" class="logo"> <img src="img/logo1.png"></a>
+            <a href="index.html"> <img src="img/logo1.png" alt="logo"  class="logo"></a>
         </span>
         <p>Company copyright 2023</p>
         <span id="footericons">
@@ -117,22 +127,15 @@
             </a>
         </span>
     </footer>
-        <!--Skip to top icon-->
-        <a href="#top" class="skip-to-top">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </a>
-        <!--Script for arrow to appear before bottom of page-->
-        <script>
-            window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          let topButton = document.querySelector(".skip-to-top");
-          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            topButton.style.display = "block";
-          } else {
-            topButton.style.display = "none";
-          }
-        }
-        </script>
+    <!---Skip to top knapp-->
+    <button class="skip-to-top" onclick="scrollToTop()">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!---Script for smooth scroll til top -->
+    <script>
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
 </body>
 </html>
