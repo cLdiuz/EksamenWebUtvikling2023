@@ -12,6 +12,9 @@
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg">
     <meta property="og:url" content="https://itstud.hiof.no/~bjornahb/index.html">
     <meta property="og:type" content="website">
+    <!--Instagram meta-->
+    <meta property="insta:site_name" content="Eksamen2023 Homepage">
+    <meta property="insta:description" content="Instagram site for Eksamen 2023"> 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
@@ -21,10 +24,13 @@
 </head>
 <body id="grid-container">
     <header id="top">
-        <section id="nav-logo">
-        <span>
-            <a href="index.html" title="Home">  <img src="img/logo1.png" class="logo" alt="logo"></a>
-        </span>
+        <!--Skip to main content knapp-->
+        <a href="#main" class="skip" aria-label="Skip to main content">Skip to main content</a>
+        <section id="nav-logo" aria-label="Logo and Navigation">
+            <span>
+            <!-- Bilde av logo, knappen har en funksjon, men logoen kunne vært en annen, så den er vel pynt og ikke pynt? :)-->
+                <a href="index.html" title="Home">  <img src="img/logo1.png" class="logo" alt="logo"></a>
+            </span>
         <nav>
             <ul>
                 <li class="listitems" id="hometext"><a href="index.html" title="Home" >Home</a></li>
@@ -35,6 +41,7 @@
         </nav>  
         </section>
         <section id="headline-background">
+            <!-- Bildet bak teksten i denne section er sett på som pynt.-->
             <article id="transperent-headline-bg">
             <h1>Compelling headline</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -45,7 +52,7 @@
             </article>
         </section>
     </header>
-    <main>
+    <main id="#main" aria-label="Main content">
         <section>
             <h2>Engaging subheading. What can you help your visitors with.</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -54,18 +61,18 @@
             </p>
         </section>
         <section id="yellowsection">
-            <img src="https://placehold.co/400x400" alt="placeholder">
+            <!-- Dette bildet vil være et informativt bilde, så ikke pynt-->
+            <img src="https://placehold.co/400x400" alt="placeholder picture for About our company">
             <article>
-            <h2>About our <br> company</h2>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <span id="readmoreaboutus"><a href="about.html#services" title="About">Read more about us</a></span>
-            </article>
-            
+                <h2>About our <br> company</h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <span id="readmoreaboutus"><a href="about.html#services" title="About">Read more about us</a></span>
+            </article> 
         </section>
         <section>
             <h2>Our services</h2>
@@ -95,13 +102,14 @@
         <section id="newlettersection">
             <h2>Sign me up for newsletter</h2>
             <div id="signmeuplabel">
-            <label><input type="text" placeholder="email@email.com"></label> 
-            <p id="signmeup">Sign me up</p>
+            <label><input type="text" placeholder="email@email.com" title="Insert email"></label> 
+            <p id="signmeup" title="Sign up!">Sign me up</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Footer">
         <span>
+            <!-- Bilde av logo, knappen har en funksjon, men logoen kunne vært en annen, så den er vel pynt og ikke pynt? :)-->
             <a href="index.html" title="Home"> <img src="img/logo1.png" alt="logoplaceholder"  class="logo"></a>
         </span>
         <p>Company copyright 2023</p>
@@ -118,7 +126,7 @@
         </span>
     </footer>
     <!---Skip to top knapp-->
-    <button class="skip-to-top" onclick="scrollToTop()">
+    <button class="skip-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
     <!---Script for smooth scroll til top -->

@@ -11,7 +11,10 @@
     <meta property="og:description" content="Eksamen 2023, Products, Portfolio">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg">
     <meta property="og:url" content="https://itstud.hiof.no/~bjornahb/products.html">
-    <meta property="og:type" content="website">              
+    <meta property="og:type" content="website">
+    <!--Instagram meta-->
+    <meta property="insta:site_name" content="Eksamen2023 Products">
+    <meta property="insta:description" content="Instagram site for Eksamen 2023">              
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font/css/font-awesome.min.css">
@@ -23,118 +26,125 @@
     <title>Products</title>
 </head>
 <body id="grid-container">
+            <!--Skip to main content knapp-->
+            <a href="#main" class="skip">Skip to main content</a>
     <header id="top">
-        <section id="nav-logo">
+        <section id="nav-logo" aria-label="Logo and Navigation">
             <span>
+                <!-- Bilde av logo, knappen har en funksjon, men logoen kunne vært en annen, så den er vel pynt og ikke pynt? :)-->
                 <a href="index.html"> <img src="img/logo1.png" class="logo" alt="logo"></a>
             </span>
             <nav>
                 <ul>
-                    <li class="listitems"><a href="index.html">Home</a></li>
-                    <li class="listitems" id="producttext"><a href="products.html">Portfolio</a></li>
-                    <li class="listitems"><a href="about.html">About</a></li>
-                    <li class="listitems" id="contactbox"><a href="about.html/#contact-title" class="contact-a">Contact</a></li>
+                    <li class="listitems"><a href="index.html" title="Home">Home</a></li>
+                    <li class="listitems" id="producttext"><a href="products.html" title="Portfolio">Portfolio</a></li>
+                    <li class="listitems"><a href="about.html" title="About us">About</a></li>
+                    <li class="listitems" id="contactbox"><a href="about.html/#contact-title" class="contact-a" title="Contact us">Contact</a></li>
                 </ul>
             </nav>
-            </section>
+        </section>
         <section id="portfoliosection">
             <h1 id="portfolio">Portfolio</h1>
         </section>
     </header>
-    <main>
+    <main id="main" aria-label="Main content">
         <section id="prodmenu">
             <section class="underline-full-width">
-            <h2>Explore previous jobs</h2>
+                <h2>Explore previous jobs</h2>
             </section>
                 <article>
-                    <a href="#branding">
+                    <a href="#branding" title="Branding">
                         <h3 class="black-box">Branding</h3>
                     </a>
                     <a href="#design">
-                        <h3 class="black-box">Design</h3>
+                        <h3 class="black-box" title="Design">Design</h3>
                     </a>
                     <a href="#development">
-                        <h3 class="black-box">Development</h3>
+                        <h3 class="black-box" title="Development">Development</h3>
                     </a>
                 </article>
         </section>
         <section id="branding">
             <section class="underline-full-width">
-            <h2 class>Branding</h2>
+                <h2 class>Branding</h2>
             </section>
             <div id="branding-container">
+                <!-- Disse bildene er relevante for branding seksjonen, altså ikke pynt-->
             <article class="picture-format">
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for branding" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             <article class="picture-format">   
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for branding" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             <article class="picture-format">  
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for branding" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             <article class="picture-format">
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for branding" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             </div>
         </section>
         <section id="design">
             <section class="underline-full-width">  
-            <h2 class>Design</h2>
+                <h2 class>Design</h2>
             </section>
-            <div id="design-container">       
+            <div id="design-container">  
+                <!-- Disse bildene er relevante for design seksjonen, altså ikke pynt-->     
                 <article class="picture-format">
-                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <img src="https://placehold.co/400x400" alt="placeholder picture for design" title="Picture">
                     <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
                 <article class="picture-format">
-                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <img src="https://placehold.co/400x400" alt="placeholder picture for design" title="Picture">
                     <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
                 <article class="picture-format">
-                    <img src="https://placehold.co/400x400" alt="placeholder">
+                    <img src="https://placehold.co/400x400" alt="placeholder picture for design" title="Picture">
                     <h3>Lorem Ipsum is simply dummy</h3>
                 </article>
             </div>
         </section>
         <section id="development"> 
             <section class="underline-full-width">
-            <h2 class>Development</h2>
+                <h2 class>Development</h2>
             </section>
             <div id="development-container">
+                <!-- Disse bildene er relevante for development seksjonen, altså ikke pynt-->
             <article class="picture-format">
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for development" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             <article class="picture-format">
-                <img src="https://placehold.co/400x400" alt="placeholder">
+                <img src="https://placehold.co/400x400" alt="placeholder picture for development" title="Picture">
                 <h3>Lorem Ipsum is simply dummy</h3>
             </article>
             </div>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Footer">
         <span>
-            <a href="index.html"> <img src="img/logo1.png" alt="logo"  class="logo"></a>
+            <!-- Bilde av logo, knappen har en funksjon, men logoen kunne vært en annen, så den er vel pynt og ikke pynt? :)-->
+            <a href="index.html"> <img src="img/logo1.png" alt="logo"  class="logo" title="Logo"></a>
         </span>
         <p>Company copyright 2023</p>
         <span id="footericons">
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" title="Facebook">
                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" title="Instagram">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-            <a href="https://no.linkedin.com">
+            <a href="https://no.linkedin.com" title="LinkedIn">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
         </span>
     </footer>
     <!---Skip to top knapp-->
-    <button class="skip-to-top" onclick="scrollToTop()">
+    <button class="skip-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
     <!---Script for smooth scroll til top -->

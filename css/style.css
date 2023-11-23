@@ -61,6 +61,21 @@ nav ul {
     color: black;
 
 }
+/*-- Skip to main  --*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}  
+
 /*- Header for index.html -*/
 
 /*-- Kode for gul boks rundt "Contact" --*/
@@ -390,7 +405,7 @@ footer span {
     flex-direction: column;
 }
 /*-----FOOTER END------*/
-/*-Skip to top button-*/
+/*-Skip to top knapp-*/
 .skip-to-top {
     position: fixed;
     bottom: 20px;
@@ -502,6 +517,7 @@ footer span {
     #development-container {
         display:flex;
         flex-direction:row;
+        justify-content: space-around;
 
     }
     .picture-format {
@@ -542,7 +558,7 @@ footer span {
     #iframe {
         width:100%;
     }
-    /*-- Hover effects--*/  
+    /*-- Hover effekter--*/  
     #contactbox a:hover {
     background-color: #252525;
     color: #e6bd43;
@@ -551,35 +567,35 @@ footer span {
     #readmoretext a:hover {
     background-color: #252525;
     color: #e6bd43;
-}
+    }
 
     #readmoreaboutus a:hover {
     background-color: #252525;
     color: #e6bd43;
-}
+    }
     #get-in-touch a:hover {
     background-color: #252525;
     color: #e6bd43;
 
-}
+    }
    #signmeup:hover {
     background-color: #252525;
     color: #e6bd43; 
-}
+    }
     .black-box:hover {
     background-color: #252525;
     color: #e6bd43;
-}
-.picture-format img {
+    }
+    .picture-format img {
     transition: transform 0.3s ease-in-out; 
 /*-- Max width ---*/    
     max-width: 629px; 
 /*-- Max width ---*/    
     width: 100%;
     height: auto;
-}
+    }
 
-.picture-format img:hover {
+    .picture-format img:hover {
     transform: scale(1.1); 
-}
+    }
 }
